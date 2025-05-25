@@ -1,8 +1,10 @@
+import NavBar from "./components/Routes"
+
 function App() {
   return (
-    <>
-      <h1>hello</h1>
-    </>
+    <div>
+      <NavBar />
+    </div>
   )
 }
 
