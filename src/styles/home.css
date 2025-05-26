@@ -207,12 +207,248 @@ button:hover {
     color: #6e716f;
 }
 
+.exploration {
+    margin-top: 180px;
+}
+
+.services {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.services .service-item {
+    border-bottom: 1px solid #6e716f;
+    padding: 20px 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.services .service-item:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.service-item .service-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-title h1 {
+    font-size: 28px;
+    line-height: normal;
+    font-weight: 500;
+}
+
+ .service-desc {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.service-desc.show {
+    max-height: 80vh;
+    margin-top: 20px;
+}
+
+.service-desc p {
+    color: #6e716f;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.service-desc .service-img-box{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.service-img-box .service-img {
+    background-size: cover;
+    background-position: center;
+    height: 360px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #6e716f;
+}
+.service-img-box .water {
+    background-image: url(../assets/cinematic_1.jpg);
+}
+.service-img-box .back {
+    background-image: url(../assets/cinematic_2.jpeg);
+    border-bottom-right-radius: 100% 100%;
+}
+
+.end {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.end .end-bg {
+    background-image: url(../assets/foota.webp);
+    background-position: center;
+    background-size: cover;
+    height: 25vw;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-left-radius: 100% 200%;
+    border-bottom-right-radius: 100% 200%;
+    filter: grayscale(.5);
+    z-index: 999;
+}
+
+.end .end-desc {
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.end-desc h1 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 8vw;
+    line-height: 100%;
+    font-weight: 500;
+    text-align: center;
+}
+
+.end-desc p {
+    width: 50%;
+    margin: 20px auto;
+    color: #6e716f;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.end-desc .eye {
+    background-image: url(../assets/eye.svg);
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+    height: 78px;
+    width: 120px;
+    display: inline-flex;
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    transition: .3s ease-in-out;
+}
+footer a:hover, footer a.active {
+    color: #1c1c1d;
+}
+
+footer h1 {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+footer .logo {
+    width: 70px;
+    display: inline-flex;
+}
+
+footer .main-foot {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 0;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    font-size: 13px;
+    color: #6e716f;
+    align-items: center;
+    font-weight: 500;
+}
+
+footer .main-foot {
+    flex-direction: column;
+    gap: 15px;
+    align-items: normal;
+}
+
+.main-foot ul {
+    margin-left: 20px;
+}
+
+
+.main-foot .small {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.main-foot .socials {
+    gap: 5px;
+}
+
+.main-foot .socials li {
+    border: 1px solid #1c1c1d;
+    background-position: center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    padding: 15px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.socials .facebook {
+    background-image: url(../assets/facebook.svg);
+}
+.socials .twitter {
+    background-image: url(../assets/twitter.svg);
+}
+.socials .insta {
+    background-image: url(../assets//insta.svg);
+}
+.socials .youtube {
+    background-image: url(../assets/youtube.svg);
+}
+
+footer .sub-foot {
+    padding: 10px 20px;
+}
+
+footer .sub-foot ul {
+    font-size: 10px;
+    font-weight: 300;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sub-foot div {
+    display: inline-flex;
+    gap: 10px;
+}
+
 @media screen and (max-width: 850px) {
     .home-page .hero {
         padding: 10px 30px;
     }
     .hero .hero-bg {
-        height: 40vw;
+        height: 35vw;
     }
     .hero-txt h1 {
         font-size: 12.5vw;
@@ -231,12 +467,38 @@ button:hover {
         margin: 100px 0;
     }
     .done h1 {
-        text-align: right;
         font-size: 2em;
     }
     .intro .special {
         width: 150px;
         height: 45px;
+    }
+    .exploration {
+        margin-top: 100px;
+    }
+    .service-title h1 {
+        font-size: 25px;
+    }
+    .service-img-box .service-img {
+        height: 300px;
+    }
+    .service-img-box .back {
+        border-radius: 10px;
+    }
+    .end-desc .end-bg {
+        height: 35vw;
+    }
+    .end-desc h1 {
+        font-size: 7vw;
+    }
+    .end-desc .eye {
+        width: 80px;
+    }
+    footer {
+        margin-top: 40px;
+    }
+    footer .logo {
+        border: none;
     }
 }
 
@@ -257,11 +519,56 @@ button:hover {
     .done {
         flex-direction: column;
     }
+    .done h1 {
+        text-align: right;
+    }
     .done .done-sub, .done .done-main {
         width: 100%;
     }
+    .projects {
+        gap: 10px;
+    }
     .project-box .project {
         height: 350px;
-        min-width: 300px
+        min-width: 80vw
     }
+    .service-title button {
+        width: fit-content;
+        align-self: flex-end;
+    }
+    .service-title h1 {
+        font-size: 20px;
+    }
+    .end-desc p, .end-desc h1 {
+        width: 100%;
+    }
+    .end-desc h1 {
+        font-size: 40px;
+    }
+    .end-desc .eye {
+        height: 50px;
+        width: 50px;
+    }
+    .main-foot .small {
+        flex-direction: column;
+    }
+    .main-foot .socials {
+        align-self: self-end;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .service-item .service-title {
+        flex-direction: column;
+        align-items: normal;
+        gap: 10px;
+    }
+    .service-desc .service-img-box {
+        flex-direction: column;
+    }
+    .service-img-box .service-img {
+        width: 100%;
+        height: 200px;
+    }
+
 }
