@@ -1,0 +1,267 @@
+.home-page {
+    background-color: #f9feff;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'montserrat', sans-serif;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid #1c1c1d;
+    text-transform: capitalize;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-family: inherit;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c1c1d;
+    color: #f4f2ea;
+}
+
+.home-page a {
+    color: inherit;
+    transition: all .3s ease-in-out;
+}
+
+.home-page .hero {
+    padding: 10px 40px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.hero .hero-bg {
+    background-image: url(../assets/landing.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vw;
+    width: 100%;
+    clip-path: ellipse(50% 100% at 50% 100%);
+    border-radius:  10px 10px;
+    filter: grayscale(.5);
+    z-index: 999;
+}
+
+.hero-txt h1{
+    font-size: 13vw;
+    line-height: 100%;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.hero-txt ul {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 13px;
+    color: #6e716f;
+    font-weight: 500;
+}
+
+.hero-txt ul a:hover {
+    color: #1c1c1d;
+    transition: all .3s ease-in-out;
+}
+
+.home-page .home-main {
+    padding: 10px 40px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.home-main .intro {
+    margin: 180px 0;
+    font-size: 4.7em;
+    line-height: normal;
+    font-weight: 500;
+}
+
+.intro .who {
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 100px;
+    color: #6e716f;
+}
+.intro .special {
+    background-position: center;
+    display: inline-flex;
+    border-radius: 30px;
+    background-size: cover;
+    width: 200px;
+    height: 50px;
+    vertical-align: middle;
+}
+.intro .collab {
+    background-image: url(../assets/landing.jpg);
+}
+.intro .propel {
+    background-image: url(../assets/studio.webp);
+}
+
+.done {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.done p {
+    color: #6e716f;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.done h1 {
+    font-size: 3em;
+    line-height: normal;
+}
+
+.done button {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px 30px;
+}
+
+.done .done-sub {
+    width: 33%;
+}
+
+.done .done-main {
+    width: 60%;
+}
+
+.projects {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    gap: 15px;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.project-box .project {
+    background-color: #6e716f;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 370px;
+    margin-bottom: 15px;
+    filter: grayscale(.5);
+    transition: all .3s ease-in-out;
+}
+.project .see {
+    border: 1px solid #f4f2ea;
+    color: #f4f2ea;
+    border-radius: 100%;
+    padding: 50px 25px;
+    background-color: #00000050;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+.project-box .project:hover {
+    border-top-left-radius: 100% 90%;
+    filter: grayscale(0);
+}
+.project:hover .see {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ethereal {
+    background-image: url(../assets/podcast.webp);
+}
+.carmos {
+    background-image: url(../assets/movi.jpg);
+}
+.bowana {
+    background-image: url(../assets/marketing.jpg);
+}
+.gordois {
+    background-image: url(../assets/gordois.jpeg);
+}
+
+.projects h1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.projects span {
+    font-size: 13px;
+    color: #6e716f;
+}
+
+@media screen and (max-width: 850px) {
+    .home-page .hero {
+        padding: 10px 30px;
+    }
+    .hero .hero-bg {
+        height: 40vw;
+    }
+    .hero-txt h1 {
+        font-size: 12.5vw;
+        margin-top: 10px;
+    }
+    .hero-txt ul {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .home-page .home-main {
+        padding: 10px 30px;
+    }
+    .home-main .intro {
+        font-size: 3em;
+        margin: 100px 0;
+    }
+    .done h1 {
+        text-align: right;
+        font-size: 2em;
+    }
+    .intro .special {
+        width: 150px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .home-page .hero {
+        padding: 10px 20px;
+    }
+    .hero-txt h1 {
+        font-size: 12vw;
+    }
+    .home-page .home-main {
+        padding: 10px 20px;
+    }
+    .home-main .intro {
+        font-size: 2.5em;
+        margin: 50px 0;
+    }
+    .done {
+        flex-direction: column;
+    }
+    .done .done-sub, .done .done-main {
+        width: 100%;
+    }
+    .project-box .project {
+        height: 350px;
+        min-width: 300px
+    }
+}
